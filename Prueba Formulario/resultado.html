@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <p><b>SOLICITUD: </b> <br /> <span id="ejRef"></span></p>
+    <p><b>SOLICITUD: </b> <br /> <span id="solicitud"></span></p>
 
     <table>
         <tr>
@@ -72,7 +72,7 @@
 
         const urlParams = new URLSearchParams(window.location.search);
 
-        var myElement = document.getElementById("ejRef");
+        var myElement = document.getElementById("solicitud");
         myElement.innerHTML = urlParams;
 
         myElement = document.getElementById("name");
