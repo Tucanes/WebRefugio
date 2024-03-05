@@ -80,30 +80,42 @@
     </table>
 
     <script>
-
         const urlParams = new URLSearchParams(window.location.search);
 
         var myElement = document.getElementById("ejRef");
         myElement.innerHTML = urlParams;
 
         myElement = document.getElementById("name");
-        myElement.innerHTML = urlParams.get("name");
+        myElement.value = urlParams.get("name");
 
         myElement = document.getElementById("mail");
-        myElement.innerHTML = urlParams.get("mail");
+        myElement.value = urlParams.get("mail");
 
         myElement = document.getElementById("tlfn");
-        myElement.innerHTML = urlParams.get("tlfn");
+        myElement.value = urlParams.get("tlfn");
 
         myElement = document.getElementById("msg");
-        myElement.innerHTML = urlParams.get("msg");
+        myElement.value = urlParams.get("msg");
 
-        myElement = document.getElementById("botonSI");
-        myElement.innerHTML = urlParams.get("botonNO");
+        document.getElementById("botonSI").addEventListener("click", function() {
+            document.getElementById("botonSi").innerHTML = "Sí";
+            document.getElementById("botonNo").innerHTML = "";
+        });
 
-        myElement = document.getElementById("botonSi");
-        myElement.innerHTML = urlParams.get("botonNo");
+        document.getElementById("botonNO").addEventListener("click", function() {
+            document.getElementById("botonSi").innerHTML = "";
+            document.getElementById("botonNo").innerHTML = "No";
+        });
 
+        document.getElementById("botonSi").addEventListener("click", function() {
+            document.getElementById("botonSI").innerHTML = "Sí";
+            document.getElementById("botonNO").innerHTML = "";
+        });
+
+        document.getElementById("botonNo").addEventListener("click", function() {
+            document.getElementById("botonSI").innerHTML = "";
+            document.getElementById("botonNO").innerHTML = "No";
+        });
     </script>
 
 </body>
