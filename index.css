@@ -1,19 +1,51 @@
-html {
-    font-family: "Lora", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-  }
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  li {
-    list-style: none;
-  }
-  header {
-    background-color: greenyellow;
-  }
-  footer {
-    background-color: greenyellow;
-  }
+body {
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #dcedc8;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Filas automáticas para header y footer, y una fila flexible para el contenido */
+  grid-template-columns: 700px 1fr; /* Columnas fijas para aside y main */
+  grid-template-areas: 
+      "header header"
+      "aside main"
+      "footer footer";
+  min-height: 100vh; /* Asegura que el contenedor principal tenga al menos la altura de la ventana */
+}
+
+header {
+  grid-area: header;
+  padding: 20px;
+  background-color: #aed581;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 15px 15px 0 0; /* Bordes redondeados solo en la esquina superior */
+  margin-bottom: 20px;
+}
+
+aside {
+  grid-area: aside;
+  padding: 20px;
+  background-color: #aed581;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 0 15px 15px 0; /* Bordes redondeados solo en la esquina izquierda */
+}
+
+main {
+  grid-area: main;
+  padding: 20px;
+  background-color: #aed581;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 15px; /* Bordes redondeados en todos los lados */
+}
+
+footer {
+  grid-area: footer;
+  padding: 20px;
+  background-color: #aed581;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 15px 15px; /* Bordes redondeados solo en la esquina inferior */
+}
+
+h1, h2 {
+  color: #33691e;
+}
