@@ -1,6 +1,38 @@
+* {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+html {
+  background-color: rgb(16, 188, 16);
+}
+body {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: whitesmoke;
+  height: 1100px;
+  border-radius: 5px;
+}
+#informacion {
+  text-align: left;
+  border-radius: 20px;
+  background-color: rgb(43, 226, 183);
+  color: whitesmoke;
+  border: 5px solid greenyellow;
+  padding: 10px;
+  margin: 20px;
+}
+header {
+  background-color: rgb(24, 180, 112);
+  text-align: center;
+
+}
+
 img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 450px;
     
   }
  
@@ -40,7 +72,6 @@ img {
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
     padding: 16px;
     color: white;
     font-weight: bold;
@@ -81,4 +112,43 @@ img {
   .dots-container {
     text-align: center;
     margin-top: 20px;
+  }
+  figure {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: green;
+  }
+  figcaption {
+    background-color: white;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: 3px grey solid;
+  }
+  input {
+    background: black;
+    color: whitesmoke;
+    border-radius: 20px;
+    margin-left: 50px;
+    border: 5px solid white;
+    height: 50px;
+    width: 150px;
+  }
+   
+  main div~p {
+    text-align: center;
+    color: green;
+    font-size: 2.5rem;
+  }
+  header div {
+   margin-bottom: 20px;
+    width: 20%;
+  }
+  header div li {
+    display: inline-block;
+    margin-right: 20px;
+    list-style: none;
+  }
+  header div li a{
+    text-decoration: none;
+    color: white;
   }
