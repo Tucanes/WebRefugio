@@ -4,13 +4,13 @@ body {
   padding: 0;
   background-color: #dcedc8;
   display: grid;
-  grid-template-rows: auto 1fr auto; /* Filas automáticas para header y footer, y una fila flexible para el contenido */
-  grid-template-columns: 700px 1fr; /* Columnas fijas para aside y main */
+  grid-template-rows: auto 1fr auto; 
+  grid-template-columns: 700px 1fr; 
   grid-template-areas: 
       "header header"
       "aside main"
       "footer footer";
-  min-height: 100vh; /* Asegura que el contenedor principal tenga al menos la altura de la ventana */
+  min-height: 100vh; 
 }
 
 header {
@@ -18,7 +18,7 @@ header {
   padding: 20px;
   background-color: #aed581;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  border-radius: 15px 15px 0 0; /* Bordes redondeados solo en la esquina superior */
+  border-radius: 15px 15px 0 0; 
   margin-bottom: 20px;
 }
 
@@ -27,7 +27,7 @@ aside {
   padding: 20px;
   background-color: #aed581;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  border-radius: 0 15px 15px 0; /* Bordes redondeados solo en la esquina izquierda */
+  border-radius: 0 15px 15px 0; 
 }
 
 main {
@@ -35,7 +35,7 @@ main {
   padding: 20px;
   background-color: #aed581;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  border-radius: 15px; /* Bordes redondeados en todos los lados */
+  border-radius: 15px; 
 }
 
 footer {
@@ -43,7 +43,7 @@ footer {
   padding: 20px;
   background-color: #aed581;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  border-radius: 0 0 15px 15px; /* Bordes redondeados solo en la esquina inferior */
+  border-radius: 0 0 15px 15px; 
 }
 
 h1, h2 {
