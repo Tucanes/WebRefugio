@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <meta charset='utf-8'/>
+    <link rel="stylesheet" href="resultado.css">
+    <title>Recogida de Datos</title>
+</head>
+<body>
+    <header></header>
+    <aside>
+        <h1>¡Datos Recogidos con Éxito!</h1>
+
+        <div id="resultContainer">
+            <h2>Información Recopilada:</h2>
+            <ul>
+                <li><strong>Nombre Completo:</strong> <span id="name"></span></li>
+                <li><strong>Correo electrónico:</strong> <span id="mail"></span></li>
+                <li><strong>Teléfono:</strong> <span id="tlfn"></span></li>
+                <li><strong>Mensaje:</strong> <span id="msg"></span></li>
+                <li><strong>¿Te gustan los perretes?:</strong> <span id="gustosDogs"></span></li>
+                <li><strong>¿Vas a cuidar correctamente tu nuevo perrete?:</strong> <span id="cuidadoPerrete"></span></li>
+            </ul>
+        </div>
+    </aside>
+    <main></main>
+    <footer></footer>
+
+    <script>
+        // Obtener los parámetros de la URL
+        var urlParams = new URLSearchParams(window.location.search);
+
+        // Mostrar los datos del formulario en la página
+        document.getElementById("name").innerText = urlParams.get("name") || "No proporcionado";
+        document.getElementById("mail").innerText = urlParams.get("mail") || "No proporcionado";
+        document.getElementById("tlfn").innerText = urlParams.get("tlfn") || "No proporcionado";
+        document.getElementById("msg").innerText = urlParams.get("message") || "No proporcionado";
+        document.getElementById("gustosDogs").innerText = urlParams.get("botonSI") || urlParams.get("botonNO") || "No proporcionado";
+        document.getElementById("cuidadoPerrete").innerText = urlParams.get("botonSi") || urlParams.get("botonNo") || "No proporcionado";
+    </script>
+</body>
+</html>
