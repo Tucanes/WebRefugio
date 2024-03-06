@@ -21,6 +21,9 @@ header {
   border-radius: 15px 15px 0 0; /* Bordes redondeados solo en la esquina superior */
   margin-bottom: 20px;
 }
+header img{
+  width: 200px;
+}
 
 aside {
   grid-area: aside;
